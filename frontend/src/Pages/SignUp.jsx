@@ -90,6 +90,9 @@ const SignUp = () => {
     })
     const responsedata=await response.json();
     console.log(responsedata);
+    if(responsedata.message==='User already exists'){
+        toast.error("Username already exists");
+    }
     if(responsedata.success){
         toast.success(responsedata.message);
         navigate('/login');
@@ -139,7 +142,7 @@ const SignUp = () => {
             To keep connected with us please login with your personal info
           </p>
         </div>
-        <button onClick={()=>navigate("/login")} className="bg-transparent w-fit font-poppins font-semibold border-white border-[2px] text-white py-3 px-10 rounded-[50px] hover:bg-green-100 hover:text-black transition-all duration-300">
+        <button onClick={()=>navigate("/")} className="bg-transparent w-fit font-poppins font-semibold border-white border-[2px] text-white py-3 px-10 rounded-[50px] hover:bg-green-100 hover:text-black transition-all duration-300">
           <a>Sign In</a>
         </button>
       </div>

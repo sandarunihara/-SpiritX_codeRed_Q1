@@ -88,7 +88,7 @@ const Login = () => {
     if(responseData.success){
         toast.success("Login successful");
         login(responseData.token, responseData.user);
-        navigate("/");
+        navigate("/home");
     }
     
     if (!responseData.success) {
@@ -184,7 +184,7 @@ const Login = () => {
           </p>
         </div>
         <button onClick={()=>navigate("/signup")} className="bg-transparent w-fit font-poppins font-semibold border-white border-[2px] text-white py-3 px-10 rounded-[50px] hover:bg-green-100 hover:text-black transition-all duration-300">
-          <a >Sign In</a>
+          <a >Sign Up</a>
         </button>
       </div>
     </div>

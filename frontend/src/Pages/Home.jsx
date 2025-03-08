@@ -8,7 +8,7 @@ const Home = () => {
 
   const handleLogout = () => {
     logout();
-    navigate('/login');
+    navigate('/');
   };
 
   // Check if the user is authenticated before rendering
