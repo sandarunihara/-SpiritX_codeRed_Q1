@@ -95,7 +95,7 @@ const SignUp = () => {
     }
     if(responsedata.success){
         toast.success(responsedata.message);
-        navigate('/login');
+        navigate('/');
     }
 
     } 
