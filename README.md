@@ -51,7 +51,7 @@ Visit `http://localhost:5173/` in your browser.
 ```sh
 cd backend
 npm install
-npm start
+npm run dev
 ```
 Server runs on `http://localhost:5000/`
 
