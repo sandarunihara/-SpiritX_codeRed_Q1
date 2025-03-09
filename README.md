@@ -1,5 +1,5 @@
-# -SpiritX_codeRed_Q1
-# SecureConnect - SpiritX_codeRed_Q1
+# -SpiritX_CodeRed_Q1
+# SecureConnect - SpiritX_CodeRed_Q1
 
 ## 📌 Project Overview
 SecureConnect is a secure authentication system built using the **MERN stack** with **Vite** for the frontend. The system features a robust signup and login mechanism with real-time validation, authentication error handling, session management, and password security enhancements.
